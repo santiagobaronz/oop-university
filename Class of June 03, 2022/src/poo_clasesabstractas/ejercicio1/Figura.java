@@ -1,14 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+// A package declaration.
 package poo_clasesabstractas.ejercicio1;
 
 /**
- *
- * @author nixod
+ * Figura is an abstract class that has a Punto object as an attribute and two abstract methods.
  */
+
 public abstract class Figura {
     private Punto centro = new Punto();
     
@@ -18,4 +14,5 @@ public abstract class Figura {
     }
     
     public abstract double calcularArea();
+    public abstract String getTypeOfFigure();
 }

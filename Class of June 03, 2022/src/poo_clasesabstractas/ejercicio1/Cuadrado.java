@@ -1,25 +1,27 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+// A package declaration.
 package poo_clasesabstractas.ejercicio1;
 
 /**
- *
- * @author nixod
+ * Cuadrado extends Figura, and it overrides the methods calcularArea and getTypeOfFigure.
  */
 public class Cuadrado extends Figura{
     private double lado = 0;
+    private String type;
 
     public Cuadrado(double x, double y, double z) {
         super(x, y);
         this.lado = z;
+        this.type = "Cuadrado";
     }
     
     @Override
     public double calcularArea() {
         return this.lado * this.lado;
+    }
+
+    @Override
+    public String getTypeOfFigure() {
+        return this.type;
     }
     
 }

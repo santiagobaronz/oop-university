@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+// A package declaration.
 package poo_clasesabstractas.ejercicio1;
 
 /**
- *
- * @author nixod
+ * A 'Punto' is a class that has two attributes, 'coordenadaX' and 'coordenadaY', which are both
+ * double's
  */
+
 public class Punto {
     private double coordenadaX = 0;
     private double coordenadaY = 0;
@@ -28,5 +25,4 @@ public class Punto {
     public void setCoordenadaY(double coordenadaY) {
         this.coordenadaY = coordenadaY;
     }
-    
 }

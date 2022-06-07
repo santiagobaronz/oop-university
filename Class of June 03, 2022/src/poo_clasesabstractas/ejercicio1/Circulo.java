@@ -1,26 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+// A package declaration.
 package poo_clasesabstractas.ejercicio1;
 
 /**
- *
- * @author nixod
+ * Circulo extends Figura and implements the abstract methods of Figura.
  */
+
 public class Circulo extends Figura{
 
     private double radio = 0;
+    private String type;
 
     public Circulo(double x, double y, double z) {
         super(x, y);
         this.radio = z;
+        this.type = "Circulo";
     }
     
     @Override
     public double calcularArea() {
         return (3.1416 * (this.radio * this.radio));
+    }
+
+    @Override
+    public String getTypeOfFigure() {
+        return this.type;
     }
     
 }
